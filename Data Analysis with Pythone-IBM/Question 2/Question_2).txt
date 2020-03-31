@@ -1,0 +1,7 @@
+import pandas as Pand
+import matplotlib.pyplot as Mplt
+import numpy as Np
+import seaborn as Sns
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler,PolynomialFeatures
+%matplotlib inline
