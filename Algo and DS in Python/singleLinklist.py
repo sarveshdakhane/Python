@@ -22,6 +22,25 @@ class singlylinklist:
                   printvalue=printvalue.link
             printvalue.link=newnode
 
+    def Delete_Node_By_Value(self,TargetNode):
+        if self.Head !=None:
+            if self.Head.value == TargetNode:
+                temp= self.Head
+                self.Head=temp.link
+                temp=None
+                return
+            current =self.Head
+            while current.link != None:
+                if current.link.value == TargetNode:
+                    temp =current.link
+                    current.link = temp.link
+                    temp=None
+                    return
+                current =current.link
+            print("Element is not found in our list")
+
+
+
     def listprint(self):
         printvalue=self.Head
         while printvalue.link is not None:
@@ -43,7 +62,6 @@ n2.link=n3
 # Print LinkList
 Playlist.listprint()
 
-
 # Insert Node At Start
 print("\n")
 for i in range(1,5):
@@ -55,4 +73,9 @@ Playlist.listprint()
 print("\n")
 for i in range(1,5):
     Playlist.Insert_at_end("Krishna {}".format(i))
+Playlist.listprint()
+
+
+print("\n")
+Playlist.Delete_Node_By_Value("Atif Aslam")
 Playlist.listprint()
