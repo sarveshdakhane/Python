@@ -41,7 +41,7 @@ class singlylinklist:
 
     def listprint(self):
         printvalue = self.Head
-        while printvalue.link is not None:
+        while printvalue is not None:
             print(printvalue, "--", printvalue.value, "--", printvalue.link)
             printvalue = printvalue.link
 
