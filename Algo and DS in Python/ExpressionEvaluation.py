@@ -52,6 +52,6 @@ class Converstion:
         
         return "".join(self.result)
 
-c=Converstion()
-result=c.infixToPostfix("(2*3+4*(5-6))")
+c = Converstion()
+result= c.infixToPostfix("(2*3+4*(5-6))")
 print("Infix : (2*3+4*(5-6))  PostFix : {} ".format(result))
