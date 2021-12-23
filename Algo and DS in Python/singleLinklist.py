@@ -63,14 +63,14 @@ Playlist.listprint()
 
 # Insert Node At Start
 print("\n")
-for i in range(1, 5):
+for i in range(1, 2):
     Playlist.Insert_at_start("Hare {}".format(i))
 Playlist.listprint()
 
 
 # Insert Node At End
 print("\n")
-for i in range(1, 5):
+for i in range(1, 2):
     Playlist.Insert_at_end("Krishna {}".format(i))
 Playlist.listprint()
 
